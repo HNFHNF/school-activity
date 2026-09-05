@@ -1,0 +1,33 @@
+{
+  "name": "campus-activity-manager",
+  "private": true,
+  "version": "0.0.0",
+  "description": "校园活动管理系统 V1.0 - 学生浏览报名、教师发布管理",
+  "author": "CampusEvents Team",
+  "type": "module",
+  "scripts": {
+    "start": "electron-vite dev",
+    "dev": "electron-vite dev",
+    "typecheck": "vue-tsc --noEmit",
+    "build": "npm run typecheck && electron-vite build && electron-builder",
+    "build:pack": "npm run typecheck && electron-vite build && electron-builder --dir",
+    "preview": "electron-vite preview"
+  },
+  "dependencies": {
+    "nodemailer": "^9.1.0",
+    "sql.js": "^1.14.2",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^8.0.1",
+    "@types/sql.js": "^1.4.11",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "electron": "^30.5.1",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^5.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.6",
+    "vue-tsc": "^2.0.26"
+  },
+  "main": "out/main/main.js"
+}
